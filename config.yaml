@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: ark-corp
-  description: A collection of all the Groups
+  name: example-all
+  description: A collection of all Backstage example entities, except users, groups, and templates
 spec:
   targets:
-    - ./organisation/org.yaml
+    - ./components.yaml

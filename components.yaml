@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: Backstage components
+  description: A collection of all components
+spec:
+  type: url
+  targets:
+    - https://github.com/thaboRach/ark-poc-api/blob/main/catalog-info.yaml
+    - https://github.com/thaboRach/ark-poc/blob/main/catalog-info.yaml
