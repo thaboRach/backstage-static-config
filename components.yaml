@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: Backstage components
+  name: backstage-components
   description: A collection of all components
 spec:
   type: url
