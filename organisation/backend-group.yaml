@@ -2,14 +2,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: frontend-team
-  description: The team responsible for managing the web application
+  name: backend-team
+  description: The team responsible for managing the microservices
 spec:
   type: team
   profile:
-    displayName: Front End
-    email: frontend@example.com
-  members: [thaboRach, julekgwa]
+    displayName: Back End
+    email: backend@example.com
+  members: [jamesSmi, joeSoap]
   children: []
 
 ---
@@ -17,20 +17,20 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: thaboRach
+  name: jamesSmi
 spec:
   profile:
-    displayName: Thabo Rachidi
-    email: thaboRach@bbd.co.za
-  memberOf: [frontend-team]
+    displayName: James Smith
+    email: jamesSmi@example.com
+  memberOf: [backend-team]
 
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: julekgwa
+  name: joeSoap
 spec:
   profile:
-    displayName: Junius Lekgoara
-    email: junius@bbd.co.za
-  memberOf: [frontend-team]
+    displayName: Joe Soap
+    email: joeSoap@bbd.co.za
+  memberOf: [backend-team]
