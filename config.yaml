@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: ark-corp
+  description: A collection of all the Groups
+spec:
+  targets:
+    - ./organisation/org.yaml

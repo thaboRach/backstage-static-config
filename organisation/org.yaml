@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: ark-corp
+  description: The ark-corp organization
+  links:
+    - url: https://thaborach.github.io/ark-poc/
+      title: Website
+spec:
+  type: organization
+  profile:
+    displayName: ARK Corp
+    email: info@ark-corp.com
+    picture: https://avatars.dicebear.com/api/identicon/info@example.com.svg?background=%23fff&margin=25
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: example-groups
+  description: A collection of all the Groups
+spec:
+  targets:
+    - ./frontend-group.yaml

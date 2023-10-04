@@ -1,0 +1,36 @@
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: frontend-team
+  description: The team responsible for managing the web application
+spec:
+  type: team
+  profile:
+    displayName: Front End
+    email: frontend@example.com
+  members: [thaboRach]
+  children: []
+
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-user
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: thaboRach
+spec:
+  profile:
+    displayName: Thabo Rachidi
+    email: thaboRach@bbd.co.za
+  memberOf: [frontend-team]
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: julekgwa
+spec:
+  profile:
+    displayName: Junius Lekgoara
+    email: junius@bbd.co.za
+  memberOf: [frontend-team]
