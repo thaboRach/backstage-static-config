@@ -32,5 +32,5 @@ metadata:
 spec:
   profile:
     displayName: Joe Soap
-    email: joeSoap@bbd.co.za
+    email: joeSoap@example.co.za
   memberOf: [backend-team]
